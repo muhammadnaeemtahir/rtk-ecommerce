@@ -9,7 +9,8 @@ const AddProduct = () => {
   const [product, setProduct] = useState({
     name: "",
     quantity: "",
-    price: null,
+    price: 0,
+
   });
 
   // update product when there is a product editing
@@ -28,6 +29,7 @@ const AddProduct = () => {
     });
   };
 
+
   // handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +41,7 @@ const AddProduct = () => {
     }
 
     // Reset form
-    setProduct({ name: "", quantity: "", price: null });
+    setProduct({ name: "", quantity: "", price: 0 });
   };
 
   return (

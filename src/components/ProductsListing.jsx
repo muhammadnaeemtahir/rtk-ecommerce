@@ -3,7 +3,6 @@ import { deleteProduct, setEditingProduct  } from "../features/productSlice";
 
 const ProductsListing = () => {
   const products = useSelector((state) => state.product.products);
-  console.log(products);
   const dispatch = useDispatch();
 
   // select editing product
@@ -17,10 +16,10 @@ const ProductsListing = () => {
         <table className="table table-striped table-bordered">
           <thead>
             <tr>
-              <th>NAME</th>
-              <th>QUANTITY</th>
-              <th>PRICE</th>
-              <th>ACTION</th>
+              <th className="text-center">NAME</th>
+              <th className="text-center">QUANTITY</th>
+              <th className="text-center">PRICE</th>
+              <th className="text-center">ACTION</th>
             </tr>
           </thead>
           <tbody>
@@ -33,10 +32,10 @@ const ProductsListing = () => {
             ) : (
               products.map((product, index) => (
                 <tr key={index}>
-                  <td>{product.name}</td>
-                  <td>{product.quantity}</td>
-                  <td>{product.price} PKR</td>
-                  <td>
+                  <td className="text-center">{product.name}</td>
+                  <td className="text-center">{product.quantity}</td>
+                  <td className="text-center">{product.price} PKR</td>
+                  <td className="text-center">
                     <button
                       type="button"
                       className="btn btn-warning btn-sm me-1"
