@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     products: [
-        { id: '1', name: 'Banana', price: 9.99, quantity: '12 items' },
-        { id: '2', name: 'Carrot', price: 19.99, quantity: '1 kg' },
-        { id: '3', name: 'Milk', price: 29.99, quantity: '1 liter' },
+        { id: '1', name: 'Banana', price: 130, quantity: '1 dozen' },
+        { id: '2', name: 'Carrot', price: 75, quantity: '1 kg' },
+        { id: '3', name: 'Milk', price: 180, quantity: '1 liter' },
     ],
     editingProduct: null
 };
